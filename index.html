@@ -37,7 +37,7 @@
             <a class="nav-link js-scroll-trigger" href="#section1">Introduction</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#section2">Normalizing by Length</a>
+            <a class="nav-link js-scroll-trigger" href="#section2">Section 2</a>
           </li>
         </ul>
       </div>
@@ -74,28 +74,30 @@
             <p class="lead"><b>So... which Hartford corridors have the most crashes?</b></p>
               <p>It's Main street.</p>
           
-          <p>As seen in Figure 1, Main St. in Hartford has the most crashes out of any street with 1,151.</p>
+          <p>As seen in Figure 1, Main Street in Hartford has the most crashes out of any street with 1,151.</p>
 
          <iframe title="Total Crashes on Hartford Corridors" aria-label="Stacked Bars" id="datawrapper-chart-66ize" src="https://datawrapper.dwcdn.net/66ize/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="590" data-external="1"></iframe></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
           </script>
 
-          <p>Figure 1: <a href="https://www.datawrapper.de/_/66ize/">This chart</a> shows that Main St. has the highest number of crashes out of Hartford corridors.</p>
+          <p>Figure 1: <a href="https://www.datawrapper.de/_/66ize/">This chart</a> shows that Main Street has the highest number of crashes out of Hartford corridors.</p>
           
-        <p class="lead"><b>But is Main St. the most dangerous?</b></p>
+        <p class="lead"><b>But is Main street the most dangerous?</b></p>
           
           <p>To answer that question we need to put our data into context.</p>
         <p>You might expect a street called <i>Main street</i> to be an important and long street. And in Hartford's case, you're right.<p> 
-        <p>In order to adjust for this, we must <i>normalize</i> the data by corridor length (in miles). By normalizing the data, we mean to take the data and “adjust raw counts into relative rates, such as percentages or per capita," but in this case relative to length (<a href='https://handsondataviz.org/normalize.html'>Hands-On Data Visualization Ch.5 Normalize the Data</a>).
+        <p>In order to adjust for this, we must <i>normalize</i> the data by corridor length (in miles). By normalizing the data, we mean to take the data and “adjust raw counts into relative rates, such as percentages or per capita," but in this case relative to <b>length</b> (<a href='https://handsondataviz.org/normalize.html'>Hands-On Data Visualization, Chapter 5: Normalize the Data</a>).
 
           
-          <p>As we build our model throughout this study, we must acknowledge that "It’s unrealistic to pretend that we can create a perfect model. But we can certainly come up with a good enough one" (<a href='https://www.google.com/books/edition/The_Truthful_Art/8dKKCwAAQBAJ'>Alberto Cairo, 2016</a>).</p>
+          <p>As we build our model throughout this study, we must acknowledge that "It’s unrealistic to pretend that we can create a perfect model. But we can certainly come up with a <i>good enough one</i>" (<a href='https://www.google.com/books/edition/The_Truthful_Art/8dKKCwAAQBAJ'>Alberto Cairo, 2016</a>).</p>
           
-          <p>As seen in Figure 2, we can normalize our data to find which street yields the most injuries by percentage of crashes:</p>
+          <p>Once we normalize our corridors for length, something is immediately apparent:</p>
+        <p> As shown in Figure 2, <b>Park Street</b> has the most crashes per mile.</p>
           
-          <iframe title="Percentages of Injury Type from Crashes in Hartford" aria-label="Stacked Bars" id="datawrapper-chart-lpHyc" src="https://datawrapper.dwcdn.net/lpHyc/2/" scrolling="no" frameborder="0" style="border: none;" width="600" height="604" data-external="1"></iframe></iframe></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+          <iframe title="Park St. Has Most Crashes Per Mile in Hartford" aria-label="Bar Chart" id="datawrapper-chart-AQ7R4" src="https://datawrapper.dwcdn.net/AQ7R4/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="590" data-external="1"></iframe>
+</iframe></iframe></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
           </script>
         
-        <p> Figure 2: <a href="https://www.datawrapper.de/_/lpHyc/"> This chart</a> shows that Main St. is not an outlier in terms of injury type, and may not be the most dangerous corridor in Hartford. </p>
+        <p> Figure 2: <a href="https://www.datawrapper.de/_/AQ7R4/"> This chart</a> shows that Park Street has the highest number of crashes per mile with 368.</p>
           
             
         </div>
@@ -110,7 +112,7 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Normalizing by Length</h2>
-          <p class="lead">Main St. has the most crashes, but it is also the longest corridor...</p>
+          <p class="lead">Main has the most crashes, but it is also the longest corridor...</p>
           
           <p>As shown in Figure 3, the raw data shows Main St. looking like the most dangerous corridor. But is this accurate?</p>
           
