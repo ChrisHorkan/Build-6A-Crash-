@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Data Story</title>
+  <title>Practice Story</title>
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -37,13 +37,7 @@
             <a class="nav-link js-scroll-trigger" href="#section1">Introduction</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#section2">Section 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#section3">Section 3</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#section4">Section 4</a>
+            <a class="nav-link js-scroll-trigger" href="#section2">Normalizing by Length</a>
           </li>
         </ul>
       </div>
@@ -53,9 +47,9 @@
 
   <header class="bg-secondary text-white">
     <div class="container text-center">
-      <h1>Hartford Corridors</h1>
-      <p class="lead">By Chris Horkan and Isaac Frank</p>
-      <p class="lead">Last updated on April 18, 2023</p>
+      <h1>Which Hartford Corridors Have the Most Crashes?</h1>
+      <p class="lead">by Isaac Frank and Chris Horkan</p>
+      <p class="lead">Last updated on April 18th, 2023</p>
       <p class="lead">for Data Visualization for All</br>with Prof. Jack Dougherty</br>Trinity College, Hartford CT, USA</p>
     </div>
   </header>
@@ -66,26 +60,41 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Introduction</h2>
-          <p class="lead">TELL AND SHOW your data story and visualizations. Notice how this paragraph appears in a larger font than others, because the HTML code begins with a "lead" class.</p>
+          <p class="lead">Major and fatal car crashes occur frequently every day across the United States.</p>
+          
+          <p>To Trinity students, this issue is important on a personal level because just last spring a student died from reckless driving along a Hartford corridor.</p>
+          
+          <p>This type of danger should not be in the minds of Trinity students, or any one else in Hartford. This is why it is important to find the most dangerous Hartford corridors to eventually find solutions to remedy the danger they pose.</p>
+          
+          <p class="lead">What is a <i>corridor<i>?</p>
+            
+            <p>Simply put, a corridor is street, road, or avenue. In order to quantify the danger found in Hartford corridors, we had to view databases that contain Hartford crash data. The most helpful one we found was 2018-2022 Hartford police report crash data from the <b>UCONN Crash Data Repository<b>. Our data and subsequent visualization and interpretation is based on crashes taking place on their respective road, and other associated data like conditions and injury type.
 
-          <p>Compose your data story in your Google Doc, because it's easier to write and edit, especially when working with other people. When you're ready, go to this <a href="https://github.com/DataVizForAll/dataviz-story-template">GitHub dataviz-story-template repo</a> to create your own version, and publish it online using Settings > Pages. When your version is published, copy and paste the link into your README file so you can easily click it.</p>
+     
+              <p class="lead"> So... which Hartford corridors have the most crashes?</p>
+              <p>It's Main street.</p>
+          
+          <p>As seen in Figure 1, Main St. in Hartford has the most crashes out of any street with 1,151.</p>
 
-          <p>Everyone must demonstrate their ability to create their own sample version for the quiz. Later, if two people are working together to co-author one data story, you may wish to create ONE GitHub account that both of you can access. But only one person at a time can make edits.</p>
-
-          <p>In your GitHub copy of this template, open the `index.html` file to see how everything must be written in HTML format. Click the pencil symbol in GithHub to edit the file. HINT: In the upper-right corner, switch the dropdown menu from `No Wrap` to `Soft Wrap` to easily view long segments of code in your screen.</p>
-
-          <p>Paragraphs like this one must begin with a `p` tag and end with a `p` closing tag.</p>
-
-          <p>Links must begin and end with `a` anchor tags, with the web address inside either single or double quotes. If you need guidance, check out this <a href='https://www.w3schools.com/html/html_basic.asp'>W3Schools HTML Tutorial</a>.
-
-          <p>When describing charts, maps, or tables that appear further below, refer to them "...as shown in Figure 1" or "...as shown in Table 1" and include those figure/table numbers in the titles or captions below.</p>
-
-          <p>Embed each of your published visualizations as an HTML iframe code, following instructions in <a href='https://handsondataviz.org/embed.html'>Chapter 9 of HODV</a>, similar to the sample below.</p>
-
-          <iframe title="Connecticut created desegregated schools for only 41 percent of Hartford Black &amp;amp; Latino students in 2019-20" aria-label="Interactive area chart" id="datawrapper-chart-fdcm0" src="https://datawrapper.dwcdn.net/fdcm0/8/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+         <iframe title="Total Crashes on Hartford Corridors" aria-label="Stacked Bars" id="datawrapper-chart-66ize" src="https://datawrapper.dwcdn.net/66ize/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="590" data-external="1"></iframe></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
           </script>
 
-          <p>ADD CAPTIONS like this -- Figure 1: Explore the <a href="https://datawrapper.dwcdn.net/fdcm0/">interactive chart</a> AND ADD your description of the chart here. Make sure your caption includes a direct link to your published chart or map in case the embed code fails to display.</p>
+          <p>Figure 1: <a href="https://www.datawrapper.de/_/66ize/">This chart</a> shows that Main St. has the highest number of crashes out of Hartford corridors.</p>
+          
+          <p class="lead">But is Main St. the most dangerous?</p>
+          
+          <p>To answer that question we need to put our data into context.</p>
+          
+          <p>Right off the bat you may notice that the name “Main Street” denotes its centrality in Hartford, likely with high volumes of traffic and activity. In this regard we note the importance for normalizing our data.</p>
+          
+          <p>As seen in Figure 2, we can normalize our data to find which street yields the most injuries by percentage of crashes:</p>
+          
+          <iframe title="Percentages of Injury Type from Crashes in Hartford" aria-label="Stacked Bars" id="datawrapper-chart-lpHyc" src="https://datawrapper.dwcdn.net/lpHyc/2/" scrolling="no" frameborder="0" style="border: none;" width="600" height="604" data-external="1"></iframe></iframe></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+          </script>
+        
+        <p> Figure 2: <a href="https://www.datawrapper.de/_/lpHyc/"> This chart</a> shows that Main St. is not an outlier in terms of injury type, and may not be the most dangerous corridor in Hartford. </p>
+          
+            
         </div>
       </div>
     </div>
@@ -97,13 +106,31 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Section 2</h2>
-          <p>Create a separate section to describe how you obtained your data, key steps in your process, and cautions for interpreting its meaning. Write for an audience of future DataViz students who may wish to replicate your steps. Write in HTML format and always include links to data sources, such as <a href='https://public-edsight.ct.gov/'>CT EdSight</a>, and also link to your shared Google Sheets.</p>
+          <h2>Normalizing by Length</h2>
+          <p class="lead">Main St. has the most crashes, but it is also the longest corridor...</p>
+          
+          <p>As shown in Figure 3, the raw data shows Main St. looking like the most dangerous corridor. But is this accurate?</p>
+          
+           <iframe title="Total Crashes on Hartford Corridors" aria-label="Bar Chart" id="datawrapper-chart-by3VM" src="https://datawrapper.dwcdn.net/by3VM/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="590" data-external="1"></iframe></iframe></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+          </script>
+        
+        <p> Figure 3: <a href="https://www.datawrapper.de/_/by3VM/"> This chart</a> shows that Main St. has far and away the most crashes out of Hartford corridors.</p>
+          
+          <p>In order to compare corridors more accurately, we must put them on a level playing field.</p>
+          
+          <p> Within our data, we divided every corridor's number of crashes by its total length (in meters) and charted them, as shown in Figure 4.</p>
+          
+      <iframe title="Total Crashes on Hartford Corridors by Length of Corridor" aria-label="Bar Chart" id="datawrapper-chart-X94ga" src="https://datawrapper.dwcdn.net/X94ga/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="590" data-external="1"></iframe></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+          </script>
+        
+        <p> Figure 4: <a href="https://www.datawrapper.de/_/X94ga/"> This chart</a> shows that other streets not presented as dangerous as Main St. have more crashes per meter.</p>
+          
         </div>
       </div>
     </div>
   </section>
   <!-- End of Section 2-->
+
 
   <!-- Beginning of Section 3-->
   <section id="section3">
