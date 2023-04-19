@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Practice Story</title>
+  <title>Hartford Corridors</title>
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -37,10 +37,16 @@
             <a class="nav-link js-scroll-trigger" href="#section1">Introduction</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#section2">Key Findings</a>
-           </li>
+            <a class="nav-link js-scroll-trigger" href="#section2">Crashes</a>
+          </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#section3">Works Cited</a>
+            <a class="nav-link js-scroll-trigger" href="#section3">Injury</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#section4">Causation</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#section5">Works Cited</a>
           </li>
         </ul>
       </div>
@@ -52,7 +58,7 @@
     <div class="container text-center">
       <h1>Which Hartford Corridors Have the Most Crashes?</h1>
       <p class="lead">by Isaac Frank and Chris Horkan</p>
-      <p class="lead">Last updated on April 18th, 2023</p>
+      <p class="lead">Last updated on 18 April 2023</p>
       <p class="lead">for Data Visualization for All</br>with Prof. Jack Dougherty</br>Trinity College, Hartford CT, USA</p>
     </div>
   </header>
@@ -63,26 +69,34 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Introduction</h2>
-          <p class="lead"><b>Major and fatal car crashes occur frequently every day across the United States.</b></p>
+           <p class="lead"><b>Major and fatal car crashes occur frequently every day across the United States.</b></p>
           
-          <p>To Trinity students, this issue is important on a personal level because just last spring a student died from reckless driving along a Hartford corridor.</p>
+          <p>To Trinity students, this issue is important on a personal level because just last Spring a student died from reckless driving along a Hartford corridor.</p>
           
-          <p>This type of danger should not be in the minds of Trinity students, or any one else in Hartford. Car crashes and speeding have had attempts to be stopped within the Hartford community, and as Hartford City Council member Josh Michtom noted in the article <a href='https://www.courant.com/2022/07/18/here-are-10-hartford-roads-with-the-most-crashes-since-2020-with-a-map-that-shows-worst-spots/'>Here are 10 Hartford roads with the most crashes since 2020. With a map that shows worst spots.</a>, "while about $500,000 was allotted to the city for traffic calming, “we tend to prioritize traffic enforcement,” which he said is not as effective at making streets safer." This is why it is important to find the most dangerous Hartford corridors to eventually find more effective solutions to remedy the danger they pose.</p>
+          <p>This type of danger should not be in the minds of Trinity students or any one else in Hartford. This is why it is important to find the most dangerous Hartford corridors to eventually find solutions to remedy the danger they pose.</p>
           
           <p class="lead"><b>What is a <i>corridor</i></b>?</p>
             
             <p>Simply put, a corridor is street, road, or avenue. In order to quantify the danger found in Hartford corridors, we had to view databases that contain Hartford crash data. The most helpful one we found was 2018-2022 Hartford police report crash data from the <a href='https://www.ctcrash.uconn.edu/'>UCONN Crash Data Repository</a>. Our data and subsequent visualization and interpretation is based on crashes taking place on their respective road, and other associated data like conditions and injury type.
+              
+              <p>It is worth noting that we did not include any non-local corridors such as interstates in our data. This is because interstate issues are not something that the city of Hartford has a large influence in. The inclusion of interstates would likely skew our results as well.</p>
+  <!-- End of Section 1 -->
 
-     
-            <p class="lead"><b>So... which Hartford corridors have the most crashes?</b></p>
-              <p>It's Main street.</p>
+  <!-- Beginning of Section 2 -->
+  <section id="section2" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Crashes on Hartford Corridors and Normalizing by Length</h2>
+           <p class="lead"><b>So... which Hartford corridor has the most crashes?</b></p>
+          <p><ins>It's Main street</ins>.</p>
           
           <p>As seen in Figure 1, Main Street in Hartford has the most crashes out of any street with 1,151.</p>
 
          <iframe title="Total Crashes on Hartford Corridors" aria-label="Stacked Bars" id="datawrapper-chart-66ize" src="https://datawrapper.dwcdn.net/66ize/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="590" data-external="1"></iframe></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
           </script>
 
-          <p>Figure 1: <a href="https://www.datawrapper.de/_/66ize/">This chart</a> shows that Main Street has the highest number of crashes out of Hartford corridors.</p>
+        <p><b>Figure 1</b>: <a href="https://www.datawrapper.de/_/66ize/">This chart</a> shows that Main Street has the highest number of crashes out of Hartford corridors with 1,151</p>
           
         <p class="lead"><b>But is Main street the most dangerous?</b></p>
           
@@ -100,60 +114,44 @@
 </iframe></iframe></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
           </script>
         
-        <p> Figure 2: <a href="https://www.datawrapper.de/_/AQ7R4/"> This chart</a> shows that Park Street has the highest number of crashes per mile with 368.</p>
-        
-        <p> This is just one of many key findings that we have. As you will see later in the story, we not only accounted for corridor length when trying to figure out which Hartford corridors have had the most crashes, by type, in recent years, but many other factors as well. Once we have solved this problem, city planners can use this information to install traffic safety measures, like adding more speed bumps and upgrading crossing signals, to slow down speeding and car crashes.<p> 
-            
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End of Section 1 -->
-
-  <!-- Beginning of Section 2 -->
-  <section id="section2" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Key Findings</h2>
-          <p class="lead">Main St. has the most crashes, but it is also the longest corridor...</p>
-          
-          <p>As shown in Figure 3, the raw data shows Main St. looking like the most dangerous corridor due to it having by far the most crashes on Hartford corridors. But is this accurate?</p>
-          
-           <iframe title="Total Crashes on Hartford Corridors" aria-label="Bar Chart" id="datawrapper-chart-by3VM" src="https://datawrapper.dwcdn.net/by3VM/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="590" data-external="1"></iframe></iframe></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-          </script>
-        
-        <p> Figure 3: <a href="https://www.datawrapper.de/_/by3VM/"> This chart</a> shows that Main St. has far and away the most crashes out of Hartford corridors.</p>
-          
-          <p>In order to compare corridors more accurately, we must put them on a level playing field.</p>
-          
-          <p> Within our data, we divided every corridor's number of crashes by its total length (in meters) and charted them, as shown in Figure 4.</p>
-          
-      <iframe title="Total Crashes on Hartford Corridors by Length of Corridor" aria-label="Bar Chart" id="datawrapper-chart-X94ga" src="https://datawrapper.dwcdn.net/X94ga/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="590" data-external="1"></iframe></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-          </script>
-        
-        <p> Figure 4: <a href="https://www.datawrapper.de/_/X94ga/"> This chart</a> shows that other streets not presented as dangerous as Main St. have more crashes per meter.</p>
-          
+<p><b>Figure 2</b>: <a href="https://www.datawrapper.de/_/AQ7R4/"> This chart</a> shows that Park Street has the highest number of crashes per mile with 368.</p>
+         
         </div>
       </div>
     </div>
   </section>
   <!-- End of Section 2-->
 
-
   <!-- Beginning of Section 3-->
   <section id="section3">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Works Cited</h2>
-
-          <p>Connecticut Crash Data Repository. <a href='https://www.ctcrash.uconn.edu/'>https://www.ctcrash.uconn.edu</a>. Accessed 18 Apr. 2023.</p>
-
-          <p>Dougherty, Jack, and Ilya Ilyankou. Normalize Your Data | Hands-On Data Visualization. handsondataviz.org, <a href='https://handsondataviz.org/normalize.html'>https://handsondataviz.org/normalize.html</a>. Accessed 18 Apr. 2023.</p>
+          <h2>Types of Injury on Hartford Corridors</h2>
+          <p class="lead">Which Hartford corridors create the most injuries, and by what type?</p>
           
-          <p>Stannard, Ed. “Here Are 10 Hartford Roads with the Most Crashes since 2020. With a Map That Shows Worst Spots.” Hartford Courant, 18 July 2022, <a href='https://www.courant.com/2022/07/18/here-are-10-hartford-roads-with-the-most-crashes-since-2020-with-a-map-that-shows-worst-spots/'>https://www.courant.com/2022/07/18/here-are-10-hartford-roads-with-the-most-crashes-since-2020-with-a-map-that-shows-worst-spots/</a>.</p>
+          <p>As shown in Figure 3, the makeup of injury types in Hartford corridors look somewhat uniform:</p>
+          
+           <iframe title="Percentages of Injury Type in Crashes on Hartford Corridors" aria-label="Stacked Bars" id="datawrapper-chart-YaAYj" src="https://datawrapper.dwcdn.net/YaAYj/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="601" data-external="1"></iframe></iframe>
+</iframe></iframe></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+          </script>
+        
+<p><b>Figure 3</b>: <a href="https://www.datawrapper.de/_/YaAYj/"> This chart</a> shows that injury makeup percentages caused on Hartford crashes are somewhat similar.</p>
 
+<p>However, the leading corridors that cause each type of injury are:</p>
+<p><b>Possible</b>: New Park Ave, <i>67%</i></p>
+<p><b>Suspected Minor</b>: Farmington Ave and Granby Street, <i>54%</i></p>
+<p><b>Suspected Serious</b>: Tower Ave, <i>11%</i></p>
+<p><b>Fatal</b>: Tower Ave, <i>2.7%</i></p>
+
+<p>Main Street and Park Street, the leaders in total crashes and crashes per mile respectively, are not leaders in an injury type. Yet, Tower Ave leads both categories of Suspected Serious and Fatal Injuries.</p>
+
+<p>With our insights, we can ask questions like, "is there something inherent about Tower Ave that causes more dangerous injuries in car crashes?"</p>
+<p>This is definitely a question worth asking because although <i>many</i> crashes occur on the longer streets, these streets may be much harder to prevent dangerous crashes on due to their seemingly "<i>normal</i>" injury correlation.</p>
+  
+  <p>However, when there is an apparent anomaly of the serious injuries and deaths occuring on Tower Ave, we are in a position to find out why.</p>
+          
+         
         </div>
       </div>
     </div>
@@ -165,75 +163,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Section 4: Advanced Tips</h2>
-
-          <p>Change names of `Section 1` etc. to customized navigation labels that make sense for your data story, such as `Why It Matters` or `How We Made This` etc. To do this you must change names in TWO places: see the Navigation Container (around lines 30-50) and the corresponding Sections below. Keep the section numbers but change the reader-friendly labels.</p>
-
-          <h4>Optional Subheaders: Use H4 tags to break up long sections</h4>
-
-          <p>All of your data visualizations should be interactive. But if you need to insert a static image, you can upload a JPG or PNG to the GitHub repo, and insert it using the HTML img tag as shown below:</p>
-
-          <img src="sample-image.jpg" style="width: 100%; margin: 30px 0">
-
-          <p>Figure 2: Describe your image in a caption, and always credit the source if someone else created it.</p>
-
-          <h4>Quickly Edit and View Changes on Your Local Computer</h4>
-
-          <p>HINT: Instead of slowly making edits on GitHub, you can quickly make edits in your local computer and view them instantly in your browser. Here's a list of steps (in HTML format):
-            <ol>
-              <li>Go to your GitHub repo and select Code > Download Zip and uncompress the folder.</li>
-              <li>Install a free code editor tool. My fav is <a href="https://atom.io">Atom Editor</a> but there are others, too.</li>
-              <li>Open the "index.html" file with your code editor and make edits.</li>
-              <li>In your browser, go to File > Open to view the "index.html" file that is on your local computer.</li>
-              <li>After making some edits in the "index.html" file, save it, and refresh your browser to view changes. Most edits should appear right away.</li>
-              <li>After making multiple edits on your local computer, carefully copy and paste the contents of "index.html" in your online GitHub account, and test your published updates online.
-            </ol>
-          </p>
-
-          <h4>Two Options for Tables</h4>
-
-          <p>If you need to create a table, first try the Datawrapper Tables tool -- see <a href='https://handsondataviz.org/table.html'>HODV Chapter 8</a> -- and embed the results like this:</p>
-
-          <iframe title="Table 1: Suburbs Offer a Small Percentage of Their Seats to Hartford Open Choice Students " aria-label="Table" id="datawrapper-chart-Qrb7J" src="https://datawrapper.dwcdn.net/Qrb7J/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="972"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-          </script>
-
-          <p>Table 1: Add your standalone caption here.</p>
-
-          <p>A second option is to use the <a href="https://www.tablesgenerator.com/html_tables">Tables Generator HTML tool</a>. Go to File > Import or manually enter your table data, then Generate the HTML code, and paste it here, similar to this sample: </p>
-
-          <style type="text/css">
-          .tg  {border-collapse:collapse;border-spacing:0;}
-          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-            overflow:hidden;padding:10px 5px;word-break:normal;}
-          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-          .tg .tg-lqy6{text-align:right;vertical-align:top}
-          .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-          .tg .tg-dvpl{border-color:inherit;text-align:right;vertical-align:top}
-          </style>
-          <table class="tg">
-          <thead>
-            <tr>
-              <th class="tg-0pky">Header A</th>
-              <th class="tg-0pky">Header B</th>
-              <th class="tg-0pky">Header C</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="tg-dvpl">123</td>
-              <td class="tg-dvpl">456</td>
-              <td class="tg-dvpl">789</td>
-            </tr>
-            <tr>
-              <td class="tg-lqy6">987</td>
-              <td class="tg-lqy6">654</td>
-              <td class="tg-lqy6">321</td>
-            </tr>
-          </tbody>
-          </table>
-
-          <p>Table 2: Add your caption here.</p>
+          <h2>What Is Causing These Injuries?</h2>
+          
+          <p>Still working on this part!</p>
 
         </div>
       </div>
@@ -241,6 +173,26 @@
   </section>
   <!-- End of Section 4 -->
 
+
+  <!-- Beginning of Section 5 -->
+  <section id="section5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Works Cited</h2>
+
+          <p>Connecticut Crash Data Repository. <a href='https://www.ctcrash.uconn.edu/'>https://www.ctcrash.uconn.edu</a>. Accessed 18 Apr. 2023.</p>
+
+          <p>Dougherty, Jack, and Ilya Ilyankou. Normalize Your Data | Hands-On Data Visualization. handsondataviz.org, <a href='https://handsondataviz.org/normalize.html'>https://handsondataviz.org/normalize.html</a>. Accessed 18 Apr. 2023.</p>
+          
+          <p>Stannard, Ed. “Here Are 10 Hartford Roads with the Most Crashes since 2020. With a Map That Shows Worst Spots.” Hartford Courant, 18 July 2022, <a href='https://www.courant.com/2022/07/18/here-are-10-hartford-roads-with-the-most-crashes-since-2020-with-a-map-that-shows-worst-spots/'>https://www.courant.com/2022/07/18/here-are-10-hartford-roads-with-the-most-crashes-since-2020-with-a-map-that-shows-worst-spots/</a>.</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End of Section 5 -->
 
 <footer class="py-5 bg-secondary">
   <div class="container">
