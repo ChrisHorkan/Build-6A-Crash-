@@ -72,7 +72,9 @@
            <p class="lead"><b>Major and fatal car crashes occur frequently every day across the United States.</b></p>
           
           <p>Speeding and reckless driving is not a new issue to Hartford: as the data in Ed Stannard's <a href='https://www.courant.com/2022/07/18/here-are-10-hartford-roads-with-the-most-crashes-since-2020-with-a-map-that-shows-worst-spots/'>article</a> finds that from January 2020 to July 2022, there were 614 crashes in 10 specified Hartford corridors, including 6 fatalities.<p> 
-          <p>The article states reasons for crashes that are not unique to Hartford like, "... human error, distracted drivers and non-motorists, driving under the influence of alcohol or drugs, speeding 'and otherwise just not following the rules of the road (running stop signs, driving aggressively, not yielding to pedestrians or right-of way traffic, etc.),'” to explain why Hartford has seen so many crashes in such a short period of time (Stannard, Ed 4).<p>  
+          <p>The article states reasons for crashes that are not unique to Hartford like, "human error, distracted drivers and non-motorists, driving under the influence of alcohol or drugs, speeding, and otherwise just not following the rules of the road (running stop signs, driving aggressively, not yielding to pedestrians or right-of way traffic, etc.)” (Stannard, Ed 4).<p>  
+          
+          <p> Given reasons that are not caused by infrastructure, we still located the most dangerous corridors within Hartford, and attempted to determine causality of crashes.</p>
           
           <p>To Trinity students, this issue is important on a personal level because just last Spring a student died from reckless driving along a Hartford corridor.</p>
           
@@ -97,7 +99,7 @@
         <div class="col-lg-8 mx-auto">
           <h2>Crashes on Hartford Corridors and Normalizing by Length</h2>
            <p class="lead"><b>So... which Hartford corridor has the most crashes?</b></p>
-          <p><ins>It's Main street</ins>.</p>
+          <p><b>It's Main Street</b>.</p>
           
           <p>As seen in Figure 1, Main Street in Hartford has the most crashes out of any street with 1,151.</p>
 
@@ -110,7 +112,7 @@
           
           <p>To answer that question we need to put our data into context.</p>
         <p>You might expect a street called <i>Main street</i> to be an important and long street. And in Hartford's case, you're right.<p> 
-        <p>In order to adjust for this, we must <i><b><ins>normalize</ins></b></i> the data by corridor length (in miles). By normalizing the data, we mean to take the data and “adjust raw counts into relative rates, such as percentages or per capita," but in this case relative to <b>length</b> (<a href='https://handsondataviz.org/normalize.html'>Hands-On Data Visualization, Chapter 5: Normalize the Data</a>).
+        <p>In order to adjust for this, we must <i><b>normalize</b></i> the data by corridor length (in miles). By normalizing the data, we mean to take the data and “adjust raw counts into relative rates, such as percentages or per capita," but in this case relative to <b>length</b> (<a href='https://handsondataviz.org/normalize.html'>Hands-On Data Visualization, Chapter 5: Normalize the Data</a>).
 
           
           <p>As we build our model throughout this study, we must acknowledge that "It’s unrealistic to pretend that we can create a perfect model. But we can certainly come up with a <i>good enough one</i>" (<a href='https://www.google.com/books/edition/The_Truthful_Art/8dKKCwAAQBAJ'>Alberto Cairo, 2016</a>).</p>
@@ -136,17 +138,17 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Types of Injury on Hartford Corridors</h2>
-          <p class="lead">Which Hartford corridors create the most injuries, and by what type?</p>
+          <p class="lead">How many injuries (and what type) happen on Hartford Corridors?</p>
           
-          <p>As shown in Figure 3, the makeup of injury types in Hartford corridors look somewhat uniform:</p>
+          <p>As shown in Figure 3, the makeup of injury types in Hartford corridors look <i>somewhat</i> uniform, with some corridors leading others.</p>
           
            <iframe title="Percentages of Injury Type in Crashes on Hartford Corridors" aria-label="Stacked Bars" id="datawrapper-chart-YaAYj" src="https://datawrapper.dwcdn.net/YaAYj/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="601" data-external="1"></iframe></iframe>
 </iframe></iframe></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
           </script>
         
-<p><b>Figure 3</b>: <a href="https://www.datawrapper.de/_/YaAYj/"> This chart</a> shows that injury makeup percentages caused on Hartford crashes are somewhat similar.</p>
+<p><b>Figure 3</b>: <a href="https://www.datawrapper.de/_/YaAYj/"> This chart</a> shows injury makeup percentages caused from Hartford crashes.</p>
 
-<p>However, the leading corridors that cause each type of injury are:</p>
+<p>However, the leading corridors of each type of injury are:</p>
 <p><b>Possible</b>: <i>New Park Ave</i> (67%; 32 total)</p>
 <p><b>Suspected Minor</b>: <i>Farmington Ave and Granby Street</i> (54%; 59 and 13 total, respectively)</p>
 <p><b>Suspected Serious</b>: <i>Tower Ave</i> (11%; 8 total)</p>
@@ -154,7 +156,7 @@
 
 <p>Main Street and Park Street, the leaders in total crashes and crashes per mile respectively, are not leaders in an injury type. Yet, Tower Ave leads both categories of Suspected Serious and Fatal Injuries.</p>
 
-<p>With our insights, we can ask questions like, "is there something inherent about Tower Ave that causes more dangerous injuries in car crashes?"</p>
+<p>With our insights, we can ask questions like, "is there something different about Tower Ave that explains why crashes reported there have higher rates of fatal or serious injuries?"</p>
 <p>This is definitely a question worth asking because although <i>many</i> crashes occur on the longer streets, these streets may be much harder to prevent dangerous crashes on due to their seemingly "<i>normal</i>" injury correlation.</p>
   
   <p>However, when there is an apparent anomaly of the serious injuries and deaths occuring on Tower Ave, we are in a position to find out why.</p>
