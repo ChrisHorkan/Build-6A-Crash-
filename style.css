@@ -16,3 +16,22 @@ section {
   width: 100vw;
   height: calc(100vh - 54px);
 }
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: #800080;
+}
+
+/* mouse over link */
+a:hover {
+  color: #8B0000;
+}
+
+/* selected link */
+a:active {
+  color: #8B0000;
+}
