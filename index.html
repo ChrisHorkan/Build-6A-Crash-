@@ -191,13 +191,17 @@
         
           
           
-<p class="lead"><b>Limitations with the Data</i></b></p>
+<p class="lead"><b>Methods & Limitations with the Data</i></b></p>
 
 <p>While these insights are fantastic to find, there are many limitations with the data. It was mentioned earlier that the data used in <a href="https://www.datawrapper.de/_/66ize/">Figure 1</a>, <a href="https://www.datawrapper.de/_/AQ7R4/"> Figure 2</a>, and <a href="https://www.datawrapper.de/_/YaAYj/"> Figure 3</a>  was taken from 2018-2022 Hartford police report crash data from the UCONN Crash Data Repository. It can not be stressed enough that <b>police officers</b> are reporting these crashes because police officers are not perfect and reporting these crashes is difficult. What makes a minor injury vs a serious injury is very subjective, which could skew the data we have avaliable to us.</p>
   
   <p>From the data, police officers have to list over 30 observations, like Manner of Crash and Road Surface Condition, as well as the categories we mentioned above which is a multitude of observations to keep track of. Even though police officers are trained in the same way, it is very possible that not every accident was reported in the same manner and so the data and visualizations could be different if one police officer reported a crash over another.</p> 
     
-    <p>This then leads us into our next limtitation, the way we collected this data. We collected our data in a similar manner to our <a href="https://jessmcruz.github.io/ints-crash-data-story/">intersection counterparts</a>. We first used our data from the UCONN Data Repository and downloaded it as a CSV file before uploading it into <a href="https://mapshaper.org/">Mapshaper.org</a>. From there, we used the “console” tab and typed “-points x=Longitude y=Latitude” pressed enter and then typed “-proj wgs84” to make the data into the shape of Hartford. Each dot represented where a crash occured and now we can get a better understanding of the corridors with the most corridors as a starting point.</p> 
+    <p>This then leads us into our next limtitation, the way we collected this data. We collected our data in a similar manner to Jess Cruz and Mia Rodriguez who determined <a href="https://jessmcruz.github.io/ints-crash-data-story/">intersection crashes</a>.</p>
+      
+      <p>We first used our data from the UCONN Data Repository and downloaded it as a CSV file before uploading it into <a href="https://mapshaper.org/">Mapshaper.org</a>. From there, we used the <i>console</i> tab and input: <i>-points x=Longitude y=Latitude</i>. Then, oriented our map with the line: <i>-proj wgs84</i> to geospatially fit our data into the correction positions. Each dot represented where a crash occured, as now we can get a better understanding of the corridors with the most corridors as a starting point.</p> 
+
+<p>From there, we drew corridors by hand in <a href="https://www.placemark.io/">Placemark.io</a> using a 20 meter buffer, and labeling each names of corridors using the name 'corridor' as a new property. We downloaded this as a .geojson file and loaded it into <a href="https://mapshaper.org/">Mapshaper.org</a> along with our <i>point</i> data from above. We then opened the <i>console</i> tab and wrote the line: <i>-points x=Longitude y=Latitude</i> once again to orient our data. We used the line: <i>-join corridor-data fields='corridor'</i> to join our data, and exported our new <i>point</i> data as a CSV.</p>
       
       <p class="lead"><b>The COVID-19 Pandemic</b></p>
       
